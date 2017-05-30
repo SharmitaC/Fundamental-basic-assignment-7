@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="app.js"></script>
+
+
+<title>Assignment-7.1</title>
+
+
+</head>
+
+<body>
+ <script language="JavaScript">
+    function CalculateArea(){
+        var radius =document.form1.txtRadius.value;
+        document.write("<P>The area of the circle is " + (radius * radius * Math.PI) + "</p>");
+        document.write("<P>The circumference of the circle is " + (2 * radius * Math.PI) + "</p>");
+    }var c = new circle(3);
+console.log('Area =', c.area().toFixed(2));
+console.log('perimeter =', c.perimeter().toFixed(2));
+
+    </script>
+    <form name=form1>
+        Enter the radius of circle:
+       <input type="text" name="txtRadius" size=10>
+       <br>
+       <input type="button" value="Calculate" onClick='CalculateArea();'>  
+    </form>
+</script>
+
+</body>
+</html>
